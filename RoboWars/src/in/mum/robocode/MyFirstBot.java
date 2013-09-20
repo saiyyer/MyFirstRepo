@@ -31,4 +31,11 @@ public class MyFirstBot extends Robot {
 	public void onScannedRobot(ScannedRobotEvent event) {
 		fire(1);
 	}
+	
+	@Override
+	public void doNothing() {
+		// TODO Auto-generated method stub
+		super.doNothing();
+	}
+	
 }
