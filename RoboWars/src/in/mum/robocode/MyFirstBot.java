@@ -12,6 +12,8 @@ public class MyFirstBot extends Robot {
 	
 	final static String ROBOT_NAME="GORT";
 	
+	
+	
 	@Override
 	public String getName() {
 		return ROBOT_NAME;
@@ -20,7 +22,7 @@ public class MyFirstBot extends Robot {
 	@Override
 	public void run() {
 		ahead(getHeading() %90);
-		turnRight(90);
+		turnRight(115);
 		while(true){
 			ahead(getHeading() %90);
 			turnRight(90);
@@ -31,11 +33,6 @@ public class MyFirstBot extends Robot {
 	public void onScannedRobot(ScannedRobotEvent event) {
 		fire(1);
 	}
-	
-	@Override
-	public void doNothing() {
-		// TODO Auto-generated method stub
-		super.doNothing();
-	}
+
 	
 }
